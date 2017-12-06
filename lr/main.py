@@ -19,20 +19,14 @@ def sigmoid(z):
     return 1/(1+np.exp(-z))
 
 def model(X,theta):
-    return sigmoid(np.dot)
+    return sigmoid(np.dot(X,theta.T))
+
 if __name__=="__main__":
-    # nums = np.arange(-10, 10, step=1)  # creates a vector containing 20 equally spaced values from -10 to 10
+    #print pdData.head(10)
+    #print pdData.shape
+    # nums = np.arange(-10, 10, step=0.01)  # creates a vector containing 20 equally spaced values from -10 to 10
     # fig, ax = plt.subplots(figsize=(12, 4))
     # ax.plot(nums, sigmoid(nums), 'r')
+    list1=[0,1,2,3,4,5]
+    print sigmoid(list1)
     plt.show()
-
-
-
-
-
-
-
-
-
-
-
